@@ -1,0 +1,32 @@
+# OS / IDE
+.DS_Store
+.idea
+
+# Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.env
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfstate.*
+.terraform/
+.terraform.lock.*
+
+# Credentials
+google_credentials.json
+
+# Logs
+logs/
+
+# Data artifacts
+data/
+**/data/
+*.parquet
+*.csv
+
+# Docker volumes
+ny_taxi_postgres_data/
