@@ -140,10 +140,12 @@ JOIN
 LIMIT 100;
 ```
 
-![SQL Query Results](images/sql/query_05.png)
+![SQL Query Results](images/sql/query_07.png)
 #### LEFT JOIN
 
 ```sql
+DELETE FROM zones WHERE "LocationID" = 142;
+
 SELECT
     tpep_pickup_datetime,
     tpep_dropoff_datetime,
@@ -152,7 +154,7 @@ SELECT
     CONCAT(zdo."Borough", ' | ', zdo."Zone") AS "dropoff_loc"
 FROM
     yellow_taxi_trips t
-RIGHT JOIN
+LEFT OUTER JOIN
     zones zpu ON t."PULocationID" = zpu."LocationID"
 JOIN
     zones zdo ON t."DOLocationID" = zdo."LocationID"
