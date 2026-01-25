@@ -8,28 +8,29 @@ Data Engineering Zoomcamp Participant (2026)
 
 ## Project Structure
 
-``` mermaid
-mindmap
-  root((NYC Taxi Data Platform))
-    README.md
-    .gitignore
-    Project Overview
-    Architecture Diagram
-    Environment Setup
-    Technologies Used
-    Week-by-Week Breakdown
-      Week 1 — Docker, SQL & Terraform
-      Week 2 — Workflow Orchestration (Airflow)
-      Week 3 — Data Warehousing
-      Week 4 — Analytics Engineering
-      Week 5 — Data Platforms
-        Ingestion with dlt
-      Week 6 — Batch
-      Week 7 — Streaming
-      Week 8–9 — Capstone (Attempt 1 & 2)
-    Key Learnings
-    Known Issues & Tradeoffs
-    Initializing the Project
+
+``` text
+NYC Taxi Data Platform — Data Engineering Zoomcamp/
+├── README.md
+├── .gitignore
+├── Project Overview
+├── Architecture Diagram
+├── Environment Setup
+├── Technologies Used
+├── Week-by-Week Breakdown
+│   ├── Week 1 – Docker, SQL & Terraform
+│   ├── Week 2 – Workflow Orchestration (Airflow)
+│   ├── Week 3 – Data Warehousing
+│   ├── Week 4 – Analytics Engineering
+│   ├── Week 5 – Data Platforms
+│   │   └── Ingestion with dlt
+│   ├── Week 6 – Batch
+│   ├── Week 7 – Streaming
+│   └── Week 8–9 – Capstone (Attempt 1 & 2)
+├── Key Learnings
+├── Known Issues & Tradeoffs
+└── Intializing the Project
+
 ```
 
 ## PROJECT OVERVIEW
@@ -40,7 +41,7 @@ Using NYC Taxi trip data as a unifying dataset, the project incrementally evolve
 
 ## ARCHITECTURE DIAGRAM
 
-![NYC Taxi Data Platform Architecture](images/architecture arch_v4_workshops.jpg)
+![NYC Taxi Data Platform Architecture](images/architecture/arch_v4_workshops.jpg)
 
 The platform follows a layered architecture where each week adds a new capability without breaking earlier assumptions.
 
@@ -79,19 +80,35 @@ This project was developed using a local-first, reproducible setup.
 
 ## Technologies Used
 
-<p align="center">
-  <img src="images/technologies/docker.svg" height="32"/>
-  <img src="images/technologies/postgresql.svg" height="32"/>
-  <img src="images/technologies/python.svg" height="32"/>
-  <img src="images/technologies/apacheairflow.svg" height="32"/>
-  <img src="images/technologies/googlebigquery.svg" height="32"/>
-  <img src="images/technologies/dbt.svg" height="32"/>
-  <img src="images/technologies/apachekafka.svg" height="32"/>
-</p>
+### Core
+- Docker
+- PostgreSQL
+- Python
+- Terraform
 
-<sub>
-Supporting tools: Terraform (IaC), pgAdmin (DB inspection), Git & GitHub (version control)
-</sub>
+### Orchestration & Analytics
+- Airflow
+- dbt
+- BigQuery
+
+### Streaming & Batch
+- Kafka
+- Spark
+
+### Tooling
+- Git
+- GitHub
+
+<p align="left">
+  <img src="images/technologies/docker.svg" width="40"/>
+  <img src="images/technologies/postgresql.svg" width="40"/>
+  <img src="images/technologies/python.svg" width="40"/>
+  <img src="images/technologies/terraform.svg" width="40"/>
+  <img src="images/technologies/airflow.svg" width="40"/>
+  <img src="images/technologies/dbt.svg" width="40"/>
+  <img src="images/technologies/bigquery.svg" width="40"/>
+  <img src="images/technologies/kafka.svg" width="40"/>
+</p>
 
 ## Week-by-Week Breakdown (Official Zoomcamp Structure)
 
@@ -194,9 +211,11 @@ Supporting tools: Terraform (IaC), pgAdmin (DB inspection), Git & GitHub (versio
 
 ## Initializing the Project
 
+```bash
 git clone https://github.com/AsherJD-io/nyc-taxi-data-platform.git
 docker compose up -d
 docker compose run ingestion
+```
 
 ### Then open pgAdmin:
 

@@ -69,12 +69,16 @@ All services are orchestrated via docker-compose.
 
 ## How to Run Locally
 
+```bash
 cd 01-docker-terraform/docker-sql/pipeline
 docker compose up -d
+```
 
 ### Verify containers:
 
+```bash
 docker compose ps
+```
 
 ### Access pgAdmin:
 
@@ -98,7 +102,9 @@ The ingestion script performs:
 
 ### Key file:
 
+```bash
 docker-sql/pipeline/ingest_data.py
+```
 
 ## SQL Exploration
 
@@ -115,7 +121,12 @@ Post-ingestion, SQL was used to validate and explore the dataset:
 ### SQL Evidence
 
 ![SQL Query Results](images/sql/query_02.png)
-#### Explicit INNER JOIN
+
+```markdown
+### Explicit INNER JOIN
+```
+
+```sql
 SELECT
     tpep_pickup_datetime,
     tpep_dropoff_datetime,
@@ -130,9 +141,14 @@ JOIN
 JOIN
     zones zdo ON t."DOLocationID" = zdo."LocationID"
 LIMIT 100;
+```
 
 ![SQL Query Results](images/sql/query_06.png)
-#### RIGHT JOIN
+```markdown
+### RIGHT JOIN
+```
+
+```sql
 SELECT
     tpep_pickup_datetime,
     tpep_dropoff_datetime,
@@ -146,9 +162,14 @@ RIGHT JOIN
 JOIN
     zones zdo ON t."DOLocationID" = zdo."LocationID"
 LIMIT 100;
+```
 
 ![SQL Query Results](images/sql/query_11.png)
-#### Ordering by Count
+```markdown
+### Ordering by Count
+```
+
+```sql
 SELECT
     CAST(tpep_dropoff_datetime AS DATE) AS "day",
     COUNT(1) AS "count",
@@ -161,6 +182,7 @@ GROUP BY
 ORDER BY
     "count" DESC
 LIMIT 100;
+```
 
 ## Terraform (Foundational)
 
@@ -192,4 +214,5 @@ Terraform is introduced conceptually to establish:
 
 - PostgreSQL 18 introduces data directory layout changes vs 16
 
-⬅️ [Back to main project overview](../README.md)
+**Back to Parent Project**
+[Back to main project overview](../README.md)

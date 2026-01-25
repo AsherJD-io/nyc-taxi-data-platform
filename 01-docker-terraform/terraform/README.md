@@ -1,18 +1,37 @@
-## Local Setup for Terraform and GCP
+# Week 1 – Terraform (Infrastructure as Code)
 
-### Pre-Requisites
-1. Terraform client installation: https://www.terraform.io/downloads
-2. Cloud Provider account: https://console.cloud.google.com/ 
+This module provisions the foundational cloud infrastructure used in the NYC Taxi Data Platform using **Terraform**.
 
-### Terraform Concepts
-[Terraform Overview](1_terraform_overview.md)
+The focus is on:
+- Declarative infrastructure
+- Reproducibility
+- Safe state management
+- Clear separation between infrastructure and application logic
 
-### GCP setup
+---
 
-1. [Setup for First-time](2_gcp_overview.md#initial-setup)
-    * [Only for Windows](windows.md) - Steps 4 & 5
-2. [IAM / Access specific to this course](2_gcp_overview.md#setup-for-access)
+## What Is Provisioned
 
-### Terraform Workshop for GCP Infra
-Your setup is ready!
-Now head to the [terraform](terraform) directory, and perform the execution steps to create your infrastructure.
+Using Terraform, this week provisions:
+
+- Cloud project / account configuration
+- Object storage bucket for raw and processed data
+- Dataset / warehouse namespace
+- IAM roles and permissions required for data ingestion
+
+> No application containers or pipelines are deployed here.  
+> Terraform is used strictly for **infrastructure provisioning**, not orchestration.
+
+---
+
+## Directory Structure
+
+```text
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── provider.tf
+├── terraform.tfvars.example
+└── README.md
+```
