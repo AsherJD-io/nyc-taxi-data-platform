@@ -210,4 +210,4 @@ Terraform is introduced conceptually to establish:
 - PostgreSQL 18 introduces data directory layout changes vs 16
 
 **Back to Parent Project**
-[Back to main project overview](../README.md)
+[NYC Taxi Data Platform – Main README](../README.md)
