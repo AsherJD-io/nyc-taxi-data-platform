@@ -121,7 +121,6 @@ Post-ingestion, SQL was used to validate and explore the dataset:
 ### SQL Evidence
 
 ![SQL Query Results](images/sql/query_02.png)
-
 #### Explicit INNER JOIN
 
 ```sql
@@ -141,8 +140,8 @@ JOIN
 LIMIT 100;
 ```
 
-![SQL Query Results](images/sql/query_06.png)
-#### RIGHT JOIN
+![SQL Query Results](images/sql/query_05.png)
+#### LEFT JOIN
 
 ```sql
 SELECT
