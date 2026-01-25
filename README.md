@@ -99,7 +99,7 @@ This project was developed using a local-first, reproducible setup.
 - Git
 - GitHub
 
-<p align="left">
+<p align="center">
   <img src="images/technologies/docker.svg" width="40"/>
   <img src="images/technologies/postgresql.svg" width="40"/>
   <img src="images/technologies/python.svg" width="40"/>

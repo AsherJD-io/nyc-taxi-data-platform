@@ -122,9 +122,7 @@ Post-ingestion, SQL was used to validate and explore the dataset:
 
 ![SQL Query Results](images/sql/query_02.png)
 
-```markdown
-### Explicit INNER JOIN
-```
+#### Explicit INNER JOIN
 
 ```sql
 SELECT
@@ -144,9 +142,7 @@ LIMIT 100;
 ```
 
 ![SQL Query Results](images/sql/query_06.png)
-```markdown
-### RIGHT JOIN
-```
+#### RIGHT JOIN
 
 ```sql
 SELECT
@@ -165,9 +161,7 @@ LIMIT 100;
 ```
 
 ![SQL Query Results](images/sql/query_11.png)
-```markdown
-### Ordering by Count
-```
+#### Ordering by Count
 
 ```sql
 SELECT
