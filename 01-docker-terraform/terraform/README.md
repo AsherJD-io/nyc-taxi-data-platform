@@ -1,4 +1,4 @@
-# Week 1 – Terraform (Infrastructure as Code)
+# Terraform (Infrastructure as Code)
 
 This module provisions the foundational cloud infrastructure used in the NYC Taxi Data Platform using **Terraform**.
 
@@ -19,7 +19,7 @@ Using Terraform, this week provisions:
 - Dataset / warehouse namespace
 - IAM roles and permissions required for data ingestion
 
-> No application containers or pipelines are deployed here.  
+> No application containers or pipelines are deployed here.
 > Terraform is used strictly for **infrastructure provisioning**, not orchestration.
 
 ---
