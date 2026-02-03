@@ -138,5 +138,5 @@ This repository intentionally includes **only final artifacts and evidence** rel
 Execution infrastructure, local configuration files, secrets and runtime logs are excluded by design.
 
 
-- ⬅️ [Paroject repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)
-- ⬅️ [Week 1 – Docker & Terraform](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform)
+⬅ [Project repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)
+⬅ [Week 1 – Docker & Terraform](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform)
