@@ -8,11 +8,8 @@ The focus of this week was workflow orchestration using **Kestra**, building on 
 
 ## Navigation
 
-- ⬅️ **Parent repository**  
-  https://github.com/AsherJD-io/nyc-taxi-data-platform
-
-- ⬅️ **Week 1 – Docker & Terraform**  
-  https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform
+- ⬅️ [Parent repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)
+- ⬅️ [Week 1 – Docker & Terraform](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform)
 
 ---
 
@@ -83,8 +80,12 @@ The following homework requirements were validated using this flow.
 - The authoritative value was retrieved from the **task logs**, not the rounded value shown in the UI.
 
 Evidence:
-- `images/hw2_file_size_logs.png` — raw byte value from task logs  
-- `images/hw2_file_size_outputs.png` — Kestra Outputs tab showing the extracted CSV
+
+**File size verification**
+
+![Raw byte value from task logs](images/hw2_file_size_logs.png)
+
+![Kestra Outputs tab showing extracted CSV](images/hw2_file_size_outputs.png)
 
 ---
 

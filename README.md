@@ -118,7 +118,7 @@ This project was developed using a local-first, reproducible setup.
 - SQL exploration on NYC Taxi data
 - Terraform fundamentals (init & project structure)
 
-📁 [`01-docker-terraform/`](./01-docker-terraform)
+📁 [`01-docker-terraform`](./01-docker-terraform)
 📝 [Detailed notes →](./01-docker-terraform/README.md)
 
 ---
@@ -128,7 +128,8 @@ This project was developed using a local-first, reproducible setup.
 - Retries, backfills, and parameterization
 - Pipeline orchestration patterns
 
-📁 `02-workflow-orchestration/`
+📁 [`02-workflow-orchestration`](./02-workflow-orchestration)
+📝 [Detailed notes →](./02-workflow-orchestration/README.md)
 
 ---
 
