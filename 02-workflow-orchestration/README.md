@@ -6,13 +6,6 @@ The focus of this week was workflow orchestration using **Kestra**, building on 
 
 ---
 
-## Navigation
-
-- ⬅️ [Parent repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)
-- ⬅️ [Week 1 – Docker & Terraform](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform)
-
----
-
 ## Context
 
 After setting up local infrastructure and database ingestion in Week 1, this week introduced orchestration concepts including:
@@ -143,3 +136,7 @@ Evidence:
 
 This repository intentionally includes **only final artifacts and evidence** relevant to the coursework and portfolio signal.  
 Execution infrastructure, local configuration files, secrets and runtime logs are excluded by design.
+
+
+- ⬅️ [Paroject repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)
+- ⬅️ [Week 1 – Docker & Terraform](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/01-docker-terraform)
