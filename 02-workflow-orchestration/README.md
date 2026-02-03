@@ -71,6 +71,7 @@ flowchart TD
 
     J --> P[Cleanup Execution Files]
     O --> P
+```
 
 ## Homework 2 Verification
 
