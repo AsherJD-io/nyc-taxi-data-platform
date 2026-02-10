@@ -138,8 +138,8 @@ This project was developed using a local-first, reproducible setup.
 - Partitioning strategies
 - Warehouse performance considerations
 
-📁 `03-data-warehouse/`
-
+📁 [`03-data-warehouse`](./03-data-warehouse)
+📝 [Detailed notes →](./03-data-warehouse/README.md)
 ---
 
 ### Week 4 — Analytics Engineering
