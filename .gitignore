@@ -1,6 +1,7 @@
 # OS / IDE
 .DS_Store
 .idea
+.vscode/
 
 # Python
 .venv/
@@ -16,15 +17,20 @@ __pycache__/
 .terraform/
 .terraform.lock.*
 
-# Credentials
-google_credentials.json
-
-# Logs
+# dbt artifacts
+target/
+dbt_packages/
+dbt_modules/
 logs/
+*.log
+
+# Credentials
+*.json
+!package.json
 
 # Data artifacts
 data/
-**/data/
+*/data/
 *.parquet
 *.csv
 
