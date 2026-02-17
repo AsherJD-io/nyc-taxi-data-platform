@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: ny_taxi
+    database: nyc-taxi-zoomcamp
+    schema: ny_taxi
+
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
+      - name: fhv_tripdata
+      - name: taxi_zone_lookup
