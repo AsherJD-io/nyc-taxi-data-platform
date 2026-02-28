@@ -43,4 +43,6 @@ ny_taxi_postgres_data/
 logs/runs
 logs/*.log
 *.py[cod]
-logs/queries
+logs/querieslocal.duckdb
+*.bak
+*.disabled
