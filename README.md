@@ -140,6 +140,7 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`03-data-warehouse`](./03-data-warehouse)
 📝 [Detailed notes →](./03-data-warehouse/README.md)
+
 ---
 
 ### Week 4 — Analytics Engineering
@@ -149,6 +150,7 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`04-analytics-engineering`](./04-analytics-engineering)
 📝 [Detailed notes →](./04-analytics-engineering/README.md)
+
 ---
 
 ### Week 5 — Data Platforms
@@ -158,6 +160,7 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`05-data-platforms`](./05-data-platforms)
 📝 [Detailed notes →](./05-data-platforms/README.md)
+
 ---
 
 ### Week 6 — Batch Processing
@@ -167,6 +170,7 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`06-batch`](./06-batch)
 📝 [Detailed notes →](./06-batch/README.md)
+
 ---
 
 ### Week 7 — Streaming
