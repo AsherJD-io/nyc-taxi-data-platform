@@ -1,0 +1,19 @@
+# Spark / local artifacts
+data/
+output/
+*.parquet
+*.csv
+*.json
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Notebooks
+.ipynb_checkpoints/
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/

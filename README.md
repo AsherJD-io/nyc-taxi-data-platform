@@ -9,7 +9,7 @@ Data Engineering Zoomcamp Participant (2026)
 ## Project Structure
 
 
-``` text
+```text
 NYC Taxi Data Platform — Data Engineering Zoomcamp/
 ├── README.md
 ├── .gitignore
@@ -19,18 +19,18 @@ NYC Taxi Data Platform — Data Engineering Zoomcamp/
 ├── Technologies Used
 ├── Week-by-Week Breakdown
 │   ├── Week 1 – Docker, SQL & Terraform
-│   ├── Week 2 – Workflow Orchestration (Airflow)
+│   ├── Week 2 – Workflow Orchestration (Kestra)
 │   ├── Week 3 – Data Warehousing
 │   ├── Week 4 – Analytics Engineering
 │   ├── Week 5 – Data Platforms
+│   │   ├── Bruin pipelines
 │   │   └── Ingestion with dlt
-│   ├── Week 6 – Batch
+│   ├── Week 6 – Batch Processing
 │   ├── Week 7 – Streaming
 │   └── Week 8–9 – Capstone (Attempt 1 & 2)
 ├── Key Learnings
 ├── Known Issues & Tradeoffs
-└── Intializing the Project
-
+└── Initializing the Project
 ```
 
 ## PROJECT OVERVIEW
@@ -147,8 +147,8 @@ This project was developed using a local-first, reproducible setup.
 - Tests and documentation
 - Metrics layer design
 
-📁 `04-analytics-engineering/`
-
+📁 [`04-analytics-engineering`](./04-analytics-engineering)
+📝 [Detailed notes →](./04-analytics-engineering/README.md)
 ---
 
 ### Week 5 — Data Platforms
@@ -156,8 +156,8 @@ This project was developed using a local-first, reproducible setup.
 - Declarative ingestion
 - Schema evolution and platform abstractions
 
-📁 `05-data-platforms/`
-
+📁 [`05-data-platforms`](./05-data-platforms)
+📝 [Detailed notes →](./05-data-platforms/README.md)
 ---
 
 ### Week 6 — Batch Processing
@@ -165,8 +165,8 @@ This project was developed using a local-first, reproducible setup.
 - Backfills and reruns
 - Performance tradeoffs
 
-📁 `06-batch/`
-
+📁 [`06-batch`](./06-batch)
+📝 [Detailed notes →](./06-batch/README.md)
 ---
 
 ### Week 7 — Streaming

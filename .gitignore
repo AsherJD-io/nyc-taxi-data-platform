@@ -1,20 +1,28 @@
 # OS / IDE
 .DS_Store
-.idea
+.idea/
 .vscode/
+.history/
+.AppleDouble
+.LSOverride
 
 # Python
 .venv/
 venv/
 */venv/
 __pycache__/
-.ipynb_checkpoints/
 *.pyc
+*.py[cod]
+.ipynb_checkpoints/
 *.env
+
+# Python build artifacts
+dist/
+build/
+*.egg-info/
 
 # Terraform
 *.tfstate
-*.tfstate.backup
 *.tfstate.*
 .terraform/
 .terraform.lock.*
@@ -23,6 +31,8 @@ __pycache__/
 target/
 dbt_packages/
 dbt_modules/
+
+# Logs
 logs/
 *.log
 
@@ -36,17 +46,21 @@ data/
 *.parquet
 *.csv
 
+# DuckDB
+*.duckdb
+local.duckdb
+
+# Spark
+spark-warehouse/
+metastore_db/
+
 # Docker volumes
 ny_taxi_postgres_data/
 
+# Bruin / dlt
 .bruin.yml
-logs/runs
-logs/*.log
-*.py[cod]
-logs/querieslocal.duckdb
+.dlt/
+
+# Misc
 *.bak
 *.disabled
-*.duckdb
-.dlt/
-.venv/
-__pycache__/

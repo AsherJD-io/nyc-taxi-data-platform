@@ -134,4 +134,4 @@ This repository intentionally includes **only final artifacts and verification e
 Temporary experiments, discarded queries, and exploratory steps are excluded to maintain signal clarity and reproducibility.
 
 ⬅ [Project repository](https://github.com/AsherJD-io/nyc-taxi-data-platform)  
-⬅ [Week 2 – Workflow Orchestration (Kestra)](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/02-workflow-orchestration)
+⬅ [Week 02 – Workflow Orchestration (Kestra)](https://github.com/AsherJD-io/nyc-taxi-data-platform/tree/main/02-workflows-orchestration)
