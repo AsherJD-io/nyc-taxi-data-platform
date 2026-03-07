@@ -82,7 +82,7 @@ The script `hw6_answers.py` computes the results for Questions **1–6**.
 
 Screenshot of the script output:
 
-![Homework answers](images/h6_answers.png)
+![Homework answers](images/hw6_answers.png)
 
 Summary of results:
 
