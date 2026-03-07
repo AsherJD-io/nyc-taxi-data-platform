@@ -5,6 +5,9 @@
 .history/
 .AppleDouble
 .LSOverride
+*.swp
+*.swo
+*~
 
 # Python
 .venv/
@@ -15,11 +18,17 @@ __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
 *.env
+.env
+.env.*
 
 # Python build artifacts
 dist/
 build/
 *.egg-info/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
 
 # Terraform
 *.tfstate
@@ -53,6 +62,16 @@ local.duckdb
 # Spark
 spark-warehouse/
 metastore_db/
+
+# Spark streaming checkpoints
+checkpoint/
+*/checkpoint/
+
+# Kafka / Streaming
+*.offset
+*.checkpoint
+*.state
+kafka-data/
 
 # Docker volumes
 ny_taxi_postgres_data/

@@ -2,7 +2,7 @@
 
 This folder contains my Week 6 work for the **DataTalks.Club Data Engineering Zoomcamp (2026 cohort)**.
 
-The focus of this week was **batch processing using Apache Spark**, executing transformations on NYC Taxi datasets and validating the homework answers.
+The focus of this week was **batch processing using Apache Spark**, executing distributed transformations on NYC Taxi datasets and validating the homework answers.
 
 ---
 
@@ -37,6 +37,7 @@ Spark sanity test:
 
 ```python
 from pyspark.sql import SparkSession
+
 spark = SparkSession.builder.master("local[*]").getOrCreate()
 spark.range(5).show()
 ```
@@ -48,7 +49,7 @@ spark.range(5).show()
 Dataset used for the homework:
 
 ```
-yellow_tripdata_2023-11.parquet
+yellow_tripdata_2025-11.parquet
 ```
 
 Source:
@@ -65,60 +66,34 @@ Source:
 
 https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv
 
+The dataset was read directly using Spark:
+
+```python
+trips = spark.read.parquet("data/yellow_tripdata_2025-11.parquet")
+```
+
+Because Parquet is a **self-describing format**, Spark automatically infers the schema from file metadata.
+
 ---
 
 ## Homework Results
 
-The script `hw6_answers.py` computes the results for Questions **2, 4, 5 and 6**.
+The script `hw6_answers.py` computes the results for Questions **1–6**.
 
 Screenshot of the script output:
 
-![Homework answers](images/hw6_answers.png)
+![Homework answers](images/h6_answers.png)
 
 Summary of results:
 
 | Question | Result |
 |--------|--------|
-| Q2 | 75MB |
-| Q4 | 58.2 |
+| Q1 | PySpark 3.5.0 (Java 17) |
+| Q2 | 25MB |
+| Q3 | 162,604 |
+| Q4 | 90.6 |
 | Q5 | 4040 |
-| Q6 | Jamaica Bay |
-
----
-
-## Record Count Note (Homework Q3)
-
-The quiz question **"Count records"** provides the following options:
-
-- 62,610  
-- 102,340  
-- 162,604  
-- 225,768  
-
-Using the official dataset `yellow_tripdata_2023-11.parquet`, Spark verification shows:
-
-```python
-spark.read.parquet("data/yellow_tripdata_2023-11.parquet").count()
-```
-
-which returns:
-
-```
-3,339,715
-```
-
-Repartitioning the dataset into four partitions produces:
-
-```
-[834,929, 834,929, 834,929, 834,928]
-```
-
-Neither the total record count nor the partition counts match the quiz options.  
-This indicates the quiz values were likely generated from a different intermediate dataset or an earlier dataset version used in the course notebook.
-
-For submission, the expected answer used by the course is:
-
-**225,768**
+| Q6 | Arden Heights |
 
 ---
 
@@ -128,11 +103,11 @@ For submission, the expected answer used by the course is:
 06-batch/
 │
 ├── data/
-│   ├── yellow_tripdata_2023-11.parquet
+│   ├── yellow_tripdata_2025-11.parquet
 │   └── taxi_zone_lookup.csv
 │
 ├── images/
-│   └── hw6_answers.png
+│   └── h6_answers.png
 │
 ├── hw6_answers.py
 └── README.md
