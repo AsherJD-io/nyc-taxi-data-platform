@@ -5,9 +5,9 @@ Author
 Asher
 Data Engineering Zoomcamp Participant (2026)
 
+---
 
 ## Project Structure
-
 
 ```text
 NYC Taxi Data Platform — Data Engineering Zoomcamp/
@@ -27,17 +27,22 @@ NYC Taxi Data Platform — Data Engineering Zoomcamp/
 │   │   └── Ingestion with dlt
 │   ├── Week 6 – Batch Processing
 │   ├── Week 7 – Streaming
-│   └── Week 8–9 – Capstone (Attempt 1 & 2)
+│   └── Week 8–9 – Capstone
 ├── Key Learnings
 ├── Known Issues & Tradeoffs
 └── Initializing the Project
 ```
+---
 
 ## PROJECT OVERVIEW
 
 This repository documents my work throughout the DataTalks.Club Data Engineering Zoomcamp, a 9-week, hands-on program focused on building production-grade data pipelines.
 
 Using NYC Taxi trip data as a unifying dataset, the project incrementally evolves from a local, containerized ingestion pipeline into a cloud-based, orchestrated, analytics-ready data platform.
+
+Capstone project: **Energy Decision Support System (Energy DSS)** → https://github.com/AsherJD-io/energy-decision-support
+
+---
 
 ## ARCHITECTURE DIAGRAM
 
@@ -51,8 +56,13 @@ The platform follows a layered architecture where each week adds a new capabilit
 
 - Later weeks focus on scale, reliability, and tradeoffs
 
+---
+
 ## ENVIRONMENT SETUP
+
 This project was developed using a local-first, reproducible setup.
+
+---
 
 ### Local Environment
 
@@ -68,6 +78,8 @@ This project was developed using a local-first, reproducible setup.
 
 - IaC: Terraform (installed locally)
 
+---
+
 ### Design Principles
 
 - No local database installations
@@ -77,6 +89,8 @@ This project was developed using a local-first, reproducible setup.
 - No credentials or state files committed to Git
 
 - Each week is isolated but composable
+
+---
 
 ## Technologies Used
 
@@ -109,6 +123,8 @@ This project was developed using a local-first, reproducible setup.
   <img src="images/technologies/bigquery.svg" width="40"/>
   <img src="images/technologies/kafka.svg" width="40"/>
 </p>
+
+---
 
 ## Week-by-Week Breakdown (Official Zoomcamp Structure)
 
@@ -178,17 +194,20 @@ This project was developed using a local-first, reproducible setup.
 - Producers and consumers
 - Real-time vs batch comparisons
 
-📁 `07-streaming/`
+📁 [`07-streaming`](./07-streaming)
+📝 [Detailed notes →](./07-streaming/README.md)
 
 ---
 
-### Week 8–9 — Capstone (Attempt 1 & 2)
+### Week 8–9 — Capstone (Energy Decision Support System)
 - End-to-end system design
 - Architecture iteration
 - Lessons learned
 
-📁 `08-09-capstone/`
+🔗 Project repo → [Energy Decision Support System (Energy DSS)](https://github.com/AsherJD-io/energy-decision-support)
+📄 Project documentation → [energy-decision-support/README.md](https://github.com/AsherJD-io/energy-decision-support/blob/main/README.md)
 
+---
 
 ## Key Learnings
 
@@ -202,6 +221,7 @@ This project was developed using a local-first, reproducible setup.
 
 - Tradeoffs matter more than tools
 
+---
 
 ## Known Issues & Tradeoffs
 
@@ -213,6 +233,7 @@ This project was developed using a local-first, reproducible setup.
 
 - All tradeoffs are explicitly documented in weekly READMEs.
 
+---
 
 ## Initializing the Project
 
@@ -221,6 +242,7 @@ git clone https://github.com/AsherJD-io/nyc-taxi-data-platform.git
 docker compose up -d
 docker compose run ingestion
 ```
+---
 
 ### Then open pgAdmin:
 
