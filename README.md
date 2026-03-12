@@ -191,7 +191,6 @@ This project was developed using a local-first, reproducible setup.
 - Lessons learned
 
 🔗 Project repo → [Energy Decision Support System (Energy DSS)](https://github.com/AsherJD-io/energy-decision-support)
-
 📄 Project documentation → [energy-decision-support/README.md](https://github.com/AsherJD-io/energy-decision-support/blob/main/README.md)
 
 ---
