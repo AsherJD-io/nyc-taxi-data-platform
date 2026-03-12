@@ -137,8 +137,6 @@ This project was developed using a local-first, reproducible setup.
 📁 [`01-docker-terraform`](./01-docker-terraform)
 📝 [Detailed notes →](./01-docker-terraform/README.md)
 
----
-
 ### Week 2 — Workflow Orchestration (Airflow)
 - DAG authoring and scheduling
 - Retries, backfills, and parameterization
@@ -146,8 +144,6 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`02-workflow-orchestration`](./02-workflow-orchestration)
 📝 [Detailed notes →](./02-workflow-orchestration/README.md)
-
----
 
 ### Week 3 — Data Warehousing
 - Analytical schema design
@@ -157,8 +153,6 @@ This project was developed using a local-first, reproducible setup.
 📁 [`03-data-warehouse`](./03-data-warehouse)
 📝 [Detailed notes →](./03-data-warehouse/README.md)
 
----
-
 ### Week 4 — Analytics Engineering
 - dbt models and transformations
 - Tests and documentation
@@ -166,8 +160,6 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`04-analytics-engineering`](./04-analytics-engineering)
 📝 [Detailed notes →](./04-analytics-engineering/README.md)
-
----
 
 ### Week 5 — Data Platforms
 - Ingestion with `dlt`
@@ -177,8 +169,6 @@ This project was developed using a local-first, reproducible setup.
 📁 [`05-data-platforms`](./05-data-platforms)
 📝 [Detailed notes →](./05-data-platforms/README.md)
 
----
-
 ### Week 6 — Batch Processing
 - Large-scale batch processing
 - Backfills and reruns
@@ -186,8 +176,6 @@ This project was developed using a local-first, reproducible setup.
 
 📁 [`06-batch`](./06-batch)
 📝 [Detailed notes →](./06-batch/README.md)
-
----
 
 ### Week 7 — Streaming
 - Kafka fundamentals
@@ -197,14 +185,13 @@ This project was developed using a local-first, reproducible setup.
 📁 [`07-streaming`](./07-streaming)
 📝 [Detailed notes →](./07-streaming/README.md)
 
----
-
 ### Week 8–9 — Capstone (Energy Decision Support System)
 - End-to-end system design
 - Architecture iteration
 - Lessons learned
 
 🔗 Project repo → [Energy Decision Support System (Energy DSS)](https://github.com/AsherJD-io/energy-decision-support)
+
 📄 Project documentation → [energy-decision-support/README.md](https://github.com/AsherJD-io/energy-decision-support/blob/main/README.md)
 
 ---
